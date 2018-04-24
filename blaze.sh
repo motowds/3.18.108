@@ -18,10 +18,13 @@ mkdir -p outdir
 #exports ::
 #toolchain , custom build_user , custom build_host , arch
 export ARCH=arm
-export ARCH_MTK_PLATFORM=mt6735
-export CROSS_COMPILE=/home/zac6ix/nana/woods/arm-eabi-4.9/bin/arm-eabi-
-export KBUILD_BUILD_USER="izaqKull"
-export KBUILD_BUILD_HOST="devStudGH"
+export ARCH_MTK_PLATFORM=mt673
+#export CROSS_COMPILE=~/arm-eabi-4.9/bin/arm-eabi-
+#export CROSS_COMPILE=$PWD/arm-gnu-7.x/bin/arm-gnu-linux-androideabi-
+export CROSS_COMPILE=$PWD/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+export KBUILD_BUILD_USER="izaqkull"
+export KBUILD_BUILD_HOST="OSX-Strec"
+>>>>>>> 4d586db50... Update blaze.sh
 
 
 compile_kernel ()
