@@ -1,12 +1,14 @@
-NAME ?= Jennie.N7x_woods
+NAME ?= OincBugxanDroid
 
-VERSION ?= 7.x
+VERSION ?= Ngt
+
+DEVICE ?= woods
 
 DATE := $(shell date +'%Y%m%d-%H%M')
 
-ZIP := $(NAME)-$(VERSION)-$(DATE).zip
+ZIP := $(NAME)-$(VERSION)-$(DEVICE)-$(DATE).zip
 
-EXCLUDE := Makefile README.md *.git* Jennie.N7x_woods*.zip *sha1
+EXCLUDE := Makefile README.md *.git* OincBugxanDroid-Ngt-woods*.zip *sha1
 
 all: $(ZIP)
 
